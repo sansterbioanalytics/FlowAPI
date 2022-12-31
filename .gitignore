@@ -131,3 +131,7 @@ dmypy.json
 # Ignore the built site other than the assets
 site/*
 !site/assets/images/*
+
+# Ignore gem related
+.gem
+.bundle
