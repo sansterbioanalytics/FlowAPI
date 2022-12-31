@@ -1,6 +1,7 @@
 site_name: GenomicFlow API
 site_description: Documentation for managing the Genomic Flow Application system.
 repo_url: https://github.com/sansterbioanalytics/FlowAPI
+site_url: https://sansterbioanalytics.github.io/FlowAPI
 
 # Navigation
 nav:
