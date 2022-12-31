@@ -1,9 +1,99 @@
 site_name: GenomicFlow API
 site_description: Documentation for managing the Genomic Flow Application system.
 repo_url: https://github.com/sansterbioanalytics/FlowAPI
+
+# Navigation
+nav:
+  - Home: index.md
+  - GenomicFlowApplications: GenomicFlowApplications.md
+
+# ↓↓ ---------------- DO NOT EDIT ANYTHING BELOW THIS LINE ---------------- ↓↓ #
+# ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ #
+
 theme:
   name: 'material'
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+  logo: 'images/SBA-Logo-White-Circle.png'
+  favicon: 'images/SBA_Logo_120x.png'
+  font:
+    text: 'IBM Plex Sans'
+    code: 'IBM Plex Mono'
+  palette:
+    primary: 'blue'
+    accent: 'deep orange'
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - autolinks
+  - git-revision-date-localized:
+      type: timeago
+      locale: en
+      fallback_to_build_date: true
+      exclude:
+        - index.md
 
 markdown_extensions:
-- fenced_code:
-    syntax_highlight: true
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: true
+      use_pygments: true
+  - def_list
+  - fontawesome_markdown
+  - footnotes
+  - markdown_include.include:
+      base_path: docs
+  - md_in_html
+  - meta
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.pathconverter
+  - pymdownx.saneheaders
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path: .
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - toc:
+      permalink: false
+      toc_depth: 4

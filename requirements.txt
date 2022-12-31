@@ -1,7 +1,12 @@
 markdown<3.4
+markdown-include=0.8.0
 mkdocs=1.4.2
+mkdocs-autolinks-plugin=0.6.0
+mkdocs-git-revision-date-localized-plugin=1.1.0
 mkdocs-material=8.5.11
 mkdocs-material-extensions=1.1.1
 mkdocs-mermaid-plugin=0.1.1
 mkdocs-minify-plugin=0.6.2
+fontawesome_markdown=0.2.6
+pygments=2.13.0
 PyYAML=6.0
