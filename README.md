@@ -10,3 +10,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Deploy
+```bash
+mkdocs gh-deploy
+```
