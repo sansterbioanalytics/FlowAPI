@@ -1,7 +1,7 @@
 site_name: GenomicFlow API
 site_description: Documentation for managing the Genomic Flow Application system.
 repo_url: https://github.com/sansterbioanalytics/FlowAPI
-site_url: https://sansterbioanalytics.github.io/FlowAPI
+site_url: https://flowapi.sansterbioanalytics.com
 
 # Navigation
 nav:
@@ -24,8 +24,8 @@ theme:
     - search.highlight
     - search.suggest
     - search.share
-  logo: 'assets/images/SBA_Logo_White_Circle.png'
-  favicon: 'assets/images/SBA_Logo_120x.png'
+  logo: 'http://sansterbioanalytics.com/wp-content/uploads/2022/12/SBA-Logo-White-Circle.png'
+  favicon: 'http://sansterbioanalytics.com/wp-content/uploads/2022/12/SBA_Logo_White_48x.png'
   font:
     text: 'IBM Plex Sans'
     code: 'IBM Plex Mono'
