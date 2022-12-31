@@ -1,5 +1,7 @@
 # FlowAPI
-Genomic Flow Application API
+Genomic Flow Application API (https://flowapi.sansterbioanalytics.com/)
+
+[![Documentation Status](https://readthedocs.org/projects/flowapi/badge/?version=latest)](https://flowapi.sansterbioanalytics.com/en/latest/?badge=latest)
 
 ## Setup Environment
 
