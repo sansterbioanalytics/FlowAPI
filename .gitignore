@@ -135,4 +135,3 @@ site/*
 # Ignore gem related
 .gem
 .bundle
-Gemfile.lock
