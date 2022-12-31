@@ -8,7 +8,7 @@ Genomic Flow Applications (or GFA for short) is the serverless compute infrastru
 
 To get started with Genomic Flow Applications, you may either use an existing containerized image (currently only Amazon Linux 2 based instances are supported) or utilize SBA Application Design to create 
 
-```mermaid
+``` mermaid
 flowchart TB
     subgraph SBA-Application-Design
     Consultation --Quote--> Design ---> C{Test}
