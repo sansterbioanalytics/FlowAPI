@@ -7,6 +7,6 @@ Setup the .venv
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-mermaid-plugin pymdown-extensions
+pip install -r requirements.txt
 ```
 
