@@ -18,4 +18,17 @@ sudo gem install bundler
 bundle install --local path .gem
 ```
 
+Set up hosting with Heroku (Automatic)
+```bash
+heroku login -i
+bundle exec jekyll-auth setup --team_id 121500467
+```
 
+Set up hosting with Heroku (Manual)
+```bash
+heroku login -i
+heroku create FlowAPI
+heroku config:set GITHUB_TEAM_ID=121500467
+git push heroku
+heroku open
+```
