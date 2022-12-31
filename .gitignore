@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Ignore the built site
-site/
+# Ignore the built site other than the assets
+site/*
+!site/assets/*
