@@ -27,7 +27,11 @@ flowchart TB
     SBA-GenomicFlow --> Amazon-ECS
     Amazon-ECS --> Web-Application
     end
-  
+```
+
+```
+style Docker-Image fill:#0073ec,stroke:#333,stroke-width:4px
+style Public-Container fill:#0073ec,stroke:#333,stroke-width:4px
 style SBA-Application-Design fill:#10,stroke:#333,stroke-width:4px
 style Genomic-Flow fill:#000,stroke:#333,stroke-width:4px
 style Existing-Application fill:#10,stroke:#333,stroke-width:4px
@@ -37,6 +41,4 @@ style C fill:#701,stroke:#333,stroke-width:4px
 style E align:center,fill:#701,stroke:#333,stroke-width:4px
 style D fill:#000,stroke:#333,stroke-width:4px
 style Design fill:#841,stroke:#333,stroke-width:4px
-style Docker-Image fill:#0073ec,stroke:#333,stroke-width:4px
-style Public-Container fill:#0073ec,stroke:#333,stroke-width:4px
 ```
