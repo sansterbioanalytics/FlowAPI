@@ -29,9 +29,22 @@ theme:
   font:
     text: 'IBM Plex Sans'
     code: 'IBM Plex Mono'
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette
   palette:
-    primary: 'blue'
-    accent: 'deep orange'
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   icon:
     admonition:
       note: fontawesome/solid/note-sticky
@@ -50,12 +63,21 @@ theme:
 plugins:
   - search
   - autolinks
+  - mermaid2:
+      arguments:
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
+        securityLevel: 'loose'
   - git-revision-date-localized:
       type: timeago
       locale: en
       fallback_to_build_date: true
       exclude:
         - index.md
+
+# Used to update mermaid styling dynamically
+extra_javascript:
+    - extra/refresh_on_toggle_dark_light.js
 
 markdown_extensions:
   - abbr
@@ -101,7 +123,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-   - pymdownx.tabbed:
+  - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true

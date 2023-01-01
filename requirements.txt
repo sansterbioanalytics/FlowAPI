@@ -1,4 +1,5 @@
 markdown-include
+mkdocs-mermaid2-plugin==0.6.0
 mkdocs==1.4.2
 mkdocs-autolinks-plugin==0.6.0
 mkdocs-git-revision-date-localized-plugin==1.1.0
