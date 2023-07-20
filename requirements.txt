@@ -8,5 +8,5 @@ mkdocs-material-extensions==1.1.1
 mkdocs-mermaid-plugin==0.1.1
 mkdocs-minify-plugin==0.6.2
 fontawesome_markdown==0.2.6
-pygments==2.13.0
+pygments==2.15.0
 PyYAML==6.0
